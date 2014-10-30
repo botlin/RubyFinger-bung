@@ -23,12 +23,13 @@ class Person
   def commonHobbies(person)
 	ret = Array.new
 	person.hobbies.each do |hobby|
-	if(@hobbies.include? hobby)
-		ret.push(hobby)		
+		if(@hobbies.include? hobby)
+			ret.push(hobby)		
+		end
 	end
         return ret		
   end
-  def self.friendslist(persons)
+  def self.friendlist(persons)
 	ret = Array.new	
 	i = 0
 	j = 1
@@ -43,6 +44,4 @@ class Person
 	end
 	return ret
   end
-end
-  
 end
